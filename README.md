@@ -1,23 +1,25 @@
-== Overview
+## Overview
+
+[Inspired by](https://github.com/tonykay/bad-ansible)
 
 Bad Ansible is a deliberately poorly constructed ansible project designed to give students a basic project to cleanup, refactor, and improve. It represents a newcomer's, aka _newbie_, approach to hacking together a functional playbook to deploy a three tier app.
 
 The entry point, `main.yml` contains multiple _good enough_ plays, and some redundant ones.
 
-=== Goal of *Bad Ansible*
+### Goal of *Bad Ansible*
 
 Set up an application that:
 
-* Sets up a `frontend1` haproxy server which load balances requests to http://frontend1.<GUID>.example.opentlc.com.
-** Requests to `frontend1` come in on port 80
-** Load balance requests to servers in the group `apps`, listening on port 8080
+* Sets up a `frontend1` haproxy server which load balances requests to http://192.168.1.11
+  * Requests to `frontend1` come in on port 80
+  * Load balance requests to servers in the group `apps`, listening on port 8080
 * Set up one or more tomcat servers, the group `apps`, to:
-** Serve the included HTML content from ` /usr/share/tomcat/webapps/ROOT/index.html`
+  * Serve the included HTML content from ` /usr/share/tomcat/webapps/ROOT/index.html`
 * Install postgres on all servers in the group appdbs
 
 *Nothing else matters* i.e. you can get rid of it!
 
-=== Tips
+### Tips
 
 * Make sure you have read the *Goals* section above and understand the desired architecture
 * There are redundant plays within `main.yml`
@@ -31,7 +33,7 @@ TIP: Don't rename any of the ansible groups: `frontends`, `apps`, `appdbs` - lat
 
 
 
-=== Usage
+### Usage
 
 . Set up the environmental variable GUID to your GUID
 +
