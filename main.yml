@@ -66,6 +66,11 @@
       path: /usr/share/tomcat/webapps/ROOT
       state: directory
 
+  - name: create another tomcat directory
+    file:
+      path: /usr/share/tomcat/webapps/ansible
+      state: directory
+
   - name: copy static index.html to tomcat webapps/ansible/index.html
     template:
       src: index.html.j2
