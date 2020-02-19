@@ -1,6 +1,6 @@
 ## Overview
 
-[Inspired by](https://github.com/tonykay/bad-ansible)
+[Inspired by Tony Kay's bad-ansible](https://github.com/tonykay/bad-ansible)
 
 Bad Ansible is a deliberately poorly constructed ansible project designed to give students a basic project to cleanup, refactor, and improve. It represents a newcomer's, aka _newbie_, approach to hacking together a functional playbook to deploy a three tier app.
 
