@@ -10,3 +10,5 @@ The short of it is:
 
 * if it is not needed -- remove it
 * if there is a better way to do it -- implement it
+
+This repo is meant to be used with the WWT Red Hat Ansible Sandbox Lab on the [WWT Platform](http://wwt.com)
